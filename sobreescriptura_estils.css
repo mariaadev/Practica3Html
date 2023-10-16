@@ -1,0 +1,53 @@
+/*1. color general de la lletra negra*/
+
+#container {
+    color: black;
+}
+
+/*2. titol nivell 1 fons blanc lletra gris*/
+
+#titol-pagina {
+    background-color: white;
+    color: grey;
+}
+
+/*3. tots els strong en color verd i subratllats*/
+
+.paragraf1 > strong, .paragraf2 > strong {
+    color:green ;
+    text-decoration: underline;
+}
+
+/*4. enllaços del paràgraf2 en italica*/
+
+.paragraf2  a {
+    font-style: italic;
+}
+
+/*5. footer general del web centrat i lletra de 10px*/
+
+article > footer {
+    font-size: 10px;
+    text-align: center;
+}
+
+/*6. Canvia l'ordre de càrrega dels fitxers i mira què passa. Sabries modificar el teu codi per a que se seguís veient igual que abans de canviar l'ordre?*/
+/*
+Els elements que es continuen veient iguals son:
+El títol h1, el text de color negre, en el primer 
+paràgraf de cada noticia es veu el text en negreta 
+subratllat i de color verd, els enllaços es veuen en cursiva i
+el footer es veu centrat i amb la mida de 10px.
+
+Els elements que sí que canvien son:
+El segon paràgraf que el text en negreta es veu com a l'inici de la pràctica, de color blau.
+¿Per què?
+Perque el CSS es llegeix des de d'alt fins abaix, i com que els selectors utilitzats son equivalents, es queda l'últim color aplicat amb el selector.
+Per arreclar-ho podriem utilitzar el selector !important en el color verd perque s'apliqui.
+
+.paragraf1 > strong, .paragraf2 > strong {
+    color:green !important;
+    text-decoration: underline;
+}
+
+*/
