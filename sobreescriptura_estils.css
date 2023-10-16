@@ -47,7 +47,8 @@ El segon paràgraf que el text en negreta es veu com a l'inici
 de la pràctica, de color blau.
 
 ¿Per què?
-Perque el CSS es llegeix des de d'alt fins abaix, i com que els selectors utilitzats son equivalents, es queda l'últim color aplicat amb el selector.
+Perque el CSS es llegeix des de d'alt fins abaix, i com que els 
+selectors utilitzats son equivalents, es queda l'últim color aplicat amb el selector.
 Per arreclar-ho podriem utilitzar el selector !important en el color verd perque s'apliqui.
 
 .paragraf1 > strong, .paragraf2 > strong {
